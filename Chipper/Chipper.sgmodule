@@ -6,14 +6,14 @@
 hostname = %APPEND% api.chippercash.com, compliance.chippercash.com, auth.chippercash.com
 
 [Script]
-# 强制跳过 Pin
+
 pin=type=http-response,pattern=https://auth.chippercash.com/pin/validate, script-path=https://raw.githubusercontent.com/rt0xc/Scripy/main/Chipper/Javascript/skipPin.js, requires-body=1
 
-# 禁止强制更新
+
 pin=type=http-response,pattern=https://api.chippercash.com/v1/health/appversion, script-path=https://raw.githubusercontent.com/rt0xc/Scripy/main/Chipper/Javascript/skipUpdate.js, requires-body=1
 
-# 展示入金界面
+
 usdt=type=http-response,pattern=https://api.chippercash.com/v1/users/accounts/configuration, script-path=https://raw.githubusercontent.com/rt0xc/Scripy/main/Chipper/Javascript/showUSDXDeposits.js, requires-body=1
 
-# 邮箱验证人脸
+
 frozen=type=http-response,pattern=https://compliance.chippercash.com/account/configuration, script-path=https://raw.githubusercontent.com/rt0xc/Scripy/main/Chipper/Javascript/skipFrozen.js, requires-body=1
