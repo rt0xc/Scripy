@@ -1,1 +1,17 @@
-const _0x200dc4=_0x52db;(function(_0x35ec08,_0x31f620){const _0x478df1=_0x52db,_0x3d1dcd=_0x35ec08();while(!![]){try{const _0x3e4a4c=parseInt(_0x478df1(0x1ed))/0x1+parseInt(_0x478df1(0x1f4))/0x2+-parseInt(_0x478df1(0x1eb))/0x3*(-parseInt(_0x478df1(0x1f1))/0x4)+parseInt(_0x478df1(0x1e9))/0x5+parseInt(_0x478df1(0x1f6))/0x6+-parseInt(_0x478df1(0x1ee))/0x7+parseInt(_0x478df1(0x1f5))/0x8*(-parseInt(_0x478df1(0x1ec))/0x9);if(_0x3e4a4c===_0x31f620)break;else _0x3d1dcd['push'](_0x3d1dcd['shift']());}catch(_0x4b678e){_0x3d1dcd['push'](_0x3d1dcd['shift']());}}}(_0x4204,0x19037));function _0x52db(_0x4b8cf0,_0x2115d3){const _0x4204a2=_0x4204();return _0x52db=function(_0x52db67,_0x53b422){_0x52db67=_0x52db67-0x1e9;let _0x3250c8=_0x4204a2[_0x52db67];return _0x3250c8;},_0x52db(_0x4b8cf0,_0x2115d3);}try{let responseObject=JSON[_0x200dc4(0x1ef)]($response[_0x200dc4(0x1ea)]);responseObject[_0x200dc4(0x1f2)]=!![];let modifiedResponseBody=JSON[_0x200dc4(0x1f3)](responseObject);$done({'body':modifiedResponseBody});}catch(_0x39dfab){console[_0x200dc4(0x1f0)]('Error\x20modifying\x20response:\x20',_0x39dfab),$done({});}function _0x4204(){const _0x17e5de=['body','78Xgqyum','45NoIwNZ','135229fmFrJQ','1010751fWzjKu','parse','log','1492trYdmb','isUSDXDepositsAvailable','stringify','402180OlLnBA','405064PJORDc','733662icJUHI','158595NYnMFD'];_0x4204=function(){return _0x17e5de;};return _0x4204();}
+try {
+    
+    let responseObject = JSON.parse($response.body);
+
+    
+    responseObject.isUSDXDepositsAvailable = true;
+
+    
+    let modifiedResponseBody = JSON.stringify(responseObject);
+
+    
+    $done({body: modifiedResponseBody});
+} catch (error) {
+    console.log("Error modifying response: ", error);
+    
+    $done({});
+}
